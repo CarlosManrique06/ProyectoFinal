@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -876,6 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c09aa3f830c3454280ef1e964d3adfd, type: 3}
+--- !u!1 &742540480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7756771836861288661, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+  m_PrefabInstance: {fileID: 1995377717}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &778721957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62fa28cbb204e4546a2ad5c1580ee188, type: 3}
@@ -1050,7 +1055,7 @@ GameObject:
   - component: {fileID: 1002125206}
   m_Layer: 0
   m_Name: Pared
-  m_TagString: Untagged
+  m_TagString: Pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1995,7 +2000,7 @@ GameObject:
   - component: {fileID: 1686499544}
   m_Layer: 0
   m_Name: Terreno
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2421,6 +2426,7 @@ MonoBehaviour:
   Range: 1000
   Arrow: {fileID: 4732352334599966480, guid: bd4fa14166117ea4ab06259078689ee9, type: 3}
   Cam: {fileID: 823561840}
+  objeto: {fileID: 742540480}
 --- !u!114 &1773386831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,6 +2580,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2833807447086918196, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_Name
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 3897803204090890355, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -2598,6 +2608,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 5343986622025945085, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_Name
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 5914306592887802657, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_Quality
       value: 0
@@ -2612,23 +2626,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.68
+      value: -13.9
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.06
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.44
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2660,7 +2674,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7756771836861288661, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_Name
-      value: ARCHERY_Target Variant
+      value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756771836861288661, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
