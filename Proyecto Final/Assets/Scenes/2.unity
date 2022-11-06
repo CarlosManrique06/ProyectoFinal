@@ -941,8 +941,8 @@ Camera:
   m_GameObject: {fileID: 823561840}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2580,6 +2580,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1497704412006449787, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337388229593677830, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2833807447086918196, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_Name
       value: Target
@@ -2608,9 +2616,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 4283384845929723608, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276244860515479050, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5343986622025945085, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_Name
       value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343986622025945085, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5914306592887802657, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_Quality
@@ -2638,11 +2658,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6984597381130963567, guid: 0b7457bfa60b483449f610501c970ceb, type: 3}
       propertyPath: m_LocalRotation.w
