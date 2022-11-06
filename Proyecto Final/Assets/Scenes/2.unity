@@ -2311,10 +2311,10 @@ GameObject:
   - component: {fileID: 1773386828}
   - component: {fileID: 1773386827}
   - component: {fileID: 1773386826}
-  - component: {fileID: 1773386825}
   - component: {fileID: 1773386824}
   - component: {fileID: 1773386829}
   - component: {fileID: 1773386830}
+  - component: {fileID: 1773386831}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2336,24 +2336,6 @@ CapsuleCollider:
   m_Height: 0.4194213
   m_Direction: 1
   m_Center: {x: -0.008122444, y: 0.11583866, z: 0.0472883}
---- !u!114 &1773386825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773386823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14494a76fda346c4f88094ed7f91080e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 823561843}
-  mouseHorizontal: 3
-  mouseVertical: 2
-  speed: 0.5
-  minRotation: -65
-  maxRotation: 60
 --- !u!54 &1773386826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2436,9 +2418,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f033826fea3c048ba1b2f7c3db3bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 100
+  Range: 1000
   Arrow: {fileID: 4732352334599966480, guid: bd4fa14166117ea4ab06259078689ee9, type: 3}
   Cam: {fileID: 823561840}
+--- !u!114 &1773386831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773386823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14494a76fda346c4f88094ed7f91080e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 823561843}
+  mouseHorizontal: 3
+  mouseVertical: 2
+  speed: 0.5
+  minRotation: -65
+  maxRotation: 60
 --- !u!4 &1808907919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62fa28cbb204e4546a2ad5c1580ee188, type: 3}
