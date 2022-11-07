@@ -15,6 +15,7 @@ public class ArrowShooting : MonoBehaviour
     int rndX;
     int rndY;
     int rndZ;
+    int rndZ2;
     int rndrX;
     int rndrY;
     private float rndrZ = 0.5f;
@@ -57,8 +58,8 @@ public class ArrowShooting : MonoBehaviour
 
                 rndX = Random.Range(-75, 75);
                 rndY = Random.Range(1, 65);
-                rndZ = Random.Range(-30, 30);
-                BLUE.transform.position = new Vector3(rndX, rndY, rndZ);
+                rndZ2 = Random.Range(-87, -180);
+                BLUE.transform.position = new Vector3(rndX, rndY, rndZ2);
                 Debug.Log("GOTCHA :D");
             }
             if (hit.transform.tag == "RED")
@@ -66,7 +67,7 @@ public class ArrowShooting : MonoBehaviour
                
                 rndX = Random.Range(-75, 75);
                 rndY = Random.Range(1, 65);
-                rndZ = Random.Range(-30,30);
+                rndZ = Random.Range(-82,-173);
                 RED.transform.position = new Vector3(rndX, rndY, rndZ);
                 Debug.Log("You Lose :c");
             }
