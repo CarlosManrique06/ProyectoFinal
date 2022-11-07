@@ -82,13 +82,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            soundManager.SeleccionAudio(0, 0.2f);
+            soundManager.SeleccionAudio(0, 1f);
         }
 
         if (Input.GetMouseButton(0))
         {
             animator.SetBool("aim", true);
-
         }
 
         if (Input.GetMouseButtonUp(0))

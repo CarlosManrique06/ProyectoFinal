@@ -52,7 +52,7 @@ public class ArrowShooting : MonoBehaviour
                 soundManager.SeleccionAudio(2, 0.5f);
                 rndX = Random.Range(-75, 75);
                 rndY = Random.Range(5, 50);
-                rndZ = Random.Range(11, 129);
+                rndZ = Random.Range(25, 145);
                 target.transform.position = new Vector3(rndX, rndY, rndZ);
                 Debug.Log("Points"+ "=" + Points++);
 
@@ -65,7 +65,7 @@ public class ArrowShooting : MonoBehaviour
                 soundManager.SeleccionAudio(2, 0.5f);
                 rndX = Random.Range(-75, 75);
                 rndY = Random.Range(1, 65);
-                rndZ2 = Random.Range(-64, -161);
+                rndZ2 = Random.Range(-66, -175);
                 BLUE.transform.position = new Vector3(rndX, rndY, rndZ2);
                 Debug.Log("GOTCHA :D");
             }
@@ -74,7 +74,7 @@ public class ArrowShooting : MonoBehaviour
                soundManager.SeleccionAudio(1, 0.2f);
                 rndX = Random.Range(-75, 75);
                 rndY = Random.Range(1, 65);
-                rndZ2 = Random.Range(-64, -161);
+                rndZ2 = Random.Range(-66, -175);
                 RED.transform.position = new Vector3(rndX, rndY, rndZ2);
                 Debug.Log("You Lose :c");
             }
