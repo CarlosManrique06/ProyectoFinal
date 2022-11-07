@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4732352334599966481}
   - component: {fileID: 1617080409137300349}
   - component: {fileID: 1642110817761588020}
-  - component: {fileID: 4061860328594458799}
   m_Layer: 0
   m_Name: Flecha-Prefab
   m_TagString: Untagged
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4732352334599966480}
   m_LocalRotation: {x: -0.0049969563, y: -0.0007415294, z: -0.0009767008, w: 0.9999868}
   m_LocalPosition: {x: 0.649, y: 1.329, z: 1.664}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,18 +115,3 @@ CapsuleCollider:
   m_Height: 0.70014966
   m_Direction: 2
   m_Center: {x: 0.0006875172, y: 0.0018828418, z: 0.054672003}
---- !u!114 &4061860328594458799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4732352334599966480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6f033826fea3c048ba1b2f7c3db3bf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerEnd: 50
-  ArrowPlus: {fileID: 0}
-  FlyingArrow: 0
