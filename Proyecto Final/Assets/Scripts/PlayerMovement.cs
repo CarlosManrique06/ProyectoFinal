@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Animator animator;
-   
+    private SoundManager soundManager;
 
     public Camera cam;
     public float mouseHorizontal = 3.0f;
@@ -16,7 +16,12 @@ public class PlayerMovement : MonoBehaviour
     public float minRotation = -65.0f;
     public float maxRotation = 60.0f;
     float h_mouse, v_mouse;
-    // Start is called before the first frame update
+
+    private void Awake() {
+        animator = GetComponentInChildren<Animator>();
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -24,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         h_mouse = mouseHorizontal * Input.GetAxis("Mouse X");
@@ -74,9 +79,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Shooting()
     {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            soundManager.SeleccionAudio(0, 0.2f);
+        }
+
         if (Input.GetMouseButton(0))
         {
             animator.SetBool("aim", true);
+
         }
 
         if (Input.GetMouseButtonUp(0))
