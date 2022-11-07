@@ -7,6 +7,8 @@ TagManager:
   - Target
   - Terreno
   - Pared
+  - RED
+  - BLUE
   layers:
   - Default
   - TransparentFX
