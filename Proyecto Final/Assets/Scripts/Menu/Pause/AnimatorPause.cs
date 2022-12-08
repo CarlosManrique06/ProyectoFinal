@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimatorFunctions : MonoBehaviour
+public class AnimatorPause : MonoBehaviour
 {
-	[SerializeField] MenuButtonController menuButtonController;
+	[SerializeField] PauseMenu menuButtonController;
 	public bool disableOnce;
 
 	void PlaySound(AudioClip whichSound)

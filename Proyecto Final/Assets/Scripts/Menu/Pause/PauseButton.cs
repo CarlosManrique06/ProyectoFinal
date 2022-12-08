@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuButton : MonoBehaviour
+public class PauseButton : MonoBehaviour
 {
-	[SerializeField] MenuButtonController menuButtonController;
+	[SerializeField] PauseMenu menuButtonController;
 	[SerializeField] Animator animator;
-	[SerializeField] AnimatorFunctions animatorFunctions;
+	[SerializeField] AnimatorPause animatorFunctions;
 	[SerializeField] int thisIndex;
 	
 

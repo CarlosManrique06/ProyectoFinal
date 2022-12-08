@@ -5,15 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonController : MonoBehaviour {
 
-	// Use this for initialization
+	
 	public int index;
+	public int MinIndex = 0;
 	[SerializeField] bool keyDown;
 	[SerializeField] int maxIndex;
 	public AudioSource audioSource;
+	public GameObject Menu;
+	public GameObject Controler;
+	
+
 
 	void Start () 
 	{
 		audioSource = GetComponent<AudioSource>();
+		Cursor.visible = false;
 	}
 
 	// Update is called once per frame
@@ -25,24 +31,24 @@ public class MenuButtonController : MonoBehaviour {
 			{
 				if (Input.GetAxis("Vertical") < 0)
 				{
-					if (index < maxIndex)
+					if (MinIndex < maxIndex)
 					{
-						index++;
+						MinIndex++;
 					}
 					else
 					{
-						index = 0;
+						MinIndex = 0;
 					}
 				}
 				else if (Input.GetAxis("Vertical") > 0)
 				{
-					if (index > 0)
+					if (MinIndex > 0)
 					{
-						index--;
+						MinIndex--;
 					}
 					else
 					{
-						index = maxIndex;
+						MinIndex = maxIndex;
 					}
 				}
 				keyDown = true;
@@ -53,35 +59,39 @@ public class MenuButtonController : MonoBehaviour {
 			keyDown = false;
 		}
 
-		if (Input.GetKeyDown(KeyCode.Return))
+
+		if (Input.GetKeyDown(KeyCode.Space) || (Input.GetKeyDown(KeyCode.Return)))
 		{
 
-			if (index == 0)
+			if (MinIndex == 0)
 			{
 				SceneManager.LoadScene(1);
 			}
+
+			if (MinIndex == 3)
+			{
+				Application.Quit();
+			}
+
+			if (MinIndex == 2)
+			{
+				Menu.SetActive(false);
+				Controler.SetActive(true);
+				
+			}
+
+
 			else if (index == 1)
 			{
 				SceneManager.LoadScene("anotherscene");
 			}
 		}
 
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 
-			if (index == 0)
-			{
-				SceneManager.LoadScene(1);
-			}
-
-			if (index == 3)
-			{
-				Application.Quit();
-			}
-			else if (index == 1)
-			{
-				SceneManager.LoadScene("anotherscene");
-			}
+			Controler.SetActive(false);
+			Menu.SetActive(true);
 		}
 	}
 }

@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class InputManager
+ {
+
+}
 public class PlayerMovement : MonoBehaviour
 {
     Animator animator;
@@ -17,9 +21,18 @@ public class PlayerMovement : MonoBehaviour
     public float maxRotation = 60.0f;
     float h_mouse, v_mouse;
 
-    private void Awake() {
+    private void Awake() 
+    {
         animator = GetComponentInChildren<Animator>();
         soundManager = FindObjectOfType<SoundManager>();
+
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        //OnGameStateChanged(GameStateManager.Instance.CurrentGameState);
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     void Start()
@@ -66,15 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(new Vector3(movX, 0, movX) * speed);
 
-        if (Input.GetKey(KeyCode.Q))
-        {
-            transform.Rotate(0, -5 * speed, 0);
-        }
-
-        if (Input.GetKey(KeyCode.E))
-        {
-            transform.Rotate(0, 5 * speed, 0);
-        }
+       
     }
 
     void Shooting()
@@ -99,6 +104,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("shoot", false);
         }
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 
  }

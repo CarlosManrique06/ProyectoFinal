@@ -109,7 +109,7 @@ AnimatorState:
   m_PrefabAsset: {fileID: 0}
   m_Name: Bow Movement
   m_Speed: 2
-  m_CycleOffset: 0
+  m_CycleOffset: 1
   m_Transitions:
   - {fileID: 7896086065680005019}
   - {fileID: 2959421246808897932}
@@ -124,10 +124,10 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: -3914749579593479162}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: Forward
   m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_CycleOffsetParameter: Forward
+  m_TimeParameter: Forward
 --- !u!1107 &-4377988511208719203
 AnimatorStateMachine:
   serializedVersion: 6
