@@ -332,8 +332,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1108210378659846170}
   - component: {fileID: 1108210378659846175}
-  - component: {fileID: 1108210378659846168}
-  - component: {fileID: 1108210378659846169}
   m_Layer: 5
   m_Name: SoundBar
   m_TagString: Untagged
@@ -382,36 +380,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1108210378659846168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108210378659846171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0878b24e0e06724aaf278308eee770a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuButtonController: {fileID: 0}
-  disableOnce: 0
---- !u!114 &1108210378659846169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108210378659846171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80979ff58833fed45a4abda20667e77b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuButtonController: {fileID: 0}
-  animator: {fileID: 1108210378659846175}
-  animatorFunctions: {fileID: 1108210378659846168}
-  thisIndex: 5
 --- !u!1 &1108210378874823152
 GameObject:
   m_ObjectHideFlags: 0

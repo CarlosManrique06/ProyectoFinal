@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 5a08b6d1d2db6eb439b9167ad06ae222
   - enabled: 1
-    path: Assets/Scenes/ArcherAimGame.unity
+    path: Assets/Scenes/ArcheryPlatformer.unity
     guid: f5cbe61196641224bbb12327bcd7e2a3
+  - enabled: 1
+    path: Assets/Scenes/ArcherAimGame 1.unity
+    guid: d30513611e8def74d8d866e4e7952b4b
   m_configObjects: {}

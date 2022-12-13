@@ -13,6 +13,7 @@ public class MenuButtonController : MonoBehaviour {
 	public AudioSource audioSource;
 	public GameObject Menu;
 	public GameObject Controler;
+
 	
 
 
@@ -65,15 +66,21 @@ public class MenuButtonController : MonoBehaviour {
 
 			if (MinIndex == 0)
 			{
-				SceneManager.LoadScene(1);
+				SceneManager.LoadScene(2);
 			}
 
-			if (MinIndex == 3)
+
+			if (MinIndex == 2)
+			{
+				SceneManager.LoadScene(2);
+			}
+
+			if (MinIndex == 4)
 			{
 				Application.Quit();
 			}
 
-			if (MinIndex == 2)
+			if (MinIndex == 3)
 			{
 				Menu.SetActive(false);
 				Controler.SetActive(true);

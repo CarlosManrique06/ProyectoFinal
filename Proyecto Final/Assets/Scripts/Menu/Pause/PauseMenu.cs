@@ -21,7 +21,9 @@ public class PauseMenu: MonoBehaviour
     public GameObject AudioSettings;
     public GameObject PauseObjects;
     public GameObject Crosshair;
-    public GameObject Sense;
+    public GameObject Time;
+    public GameObject Score;
+    public GameObject Controls;
 
 
 
@@ -80,15 +82,15 @@ public class PauseMenu: MonoBehaviour
                 Cursor.visible = true;
 
             }
-
             if (MinIndex == 0)
             {
-                Sense.SetActive(true);
-               PauseObjects.SetActive(false);
-               Cursor.visible = true;
-
+                Controls.SetActive(true);
+                PauseObjects.SetActive(false);
+              
 
             }
+
+
 
 
         }
@@ -126,6 +128,11 @@ public class PauseMenu: MonoBehaviour
         maxIndex = 2;
         Cursor.lockState = CursorLockMode.Confined;
         PauseObjects.SetActive(true);
+        Score.SetActive(false);
+        Time.SetActive(false);
+        Controls.SetActive(false);
+       AudioSettings.SetActive(false);
+
 
 
     }
@@ -135,13 +142,14 @@ public class PauseMenu: MonoBehaviour
         MenuPause.SetActive(false);
         ActivePause = false;
         Crosshair.SetActive(true);
+        Score.SetActive(true);
+        Time.SetActive(true);
         //Hud.SetActive(true);
         Cursor.visible = false;
         maxIndex = 0;
         Cursor.lockState = CursorLockMode.Locked;
-        AudioSettings.SetActive(false);
         PauseObjects.SetActive(false);
-        Sense.SetActive(false);
+     
     }
 
 

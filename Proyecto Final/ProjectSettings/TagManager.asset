@@ -9,6 +9,8 @@ TagManager:
   - Pared
   - RED
   - BLUE
+  - Easy
+  - Hard
   layers:
   - Default
   - TransparentFX
