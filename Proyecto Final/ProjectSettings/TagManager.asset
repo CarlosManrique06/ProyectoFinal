@@ -10,7 +10,11 @@ TagManager:
   - RED
   - BLUE
   - Easy
+  - SnowMan
   - Hard
+  - SnowMan2
+  - SnowMan3
+  - Credits
   layers:
   - Default
   - TransparentFX

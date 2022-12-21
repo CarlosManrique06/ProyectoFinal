@@ -61,7 +61,7 @@ public class MenuButtonController : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown(KeyCode.Space) || (Input.GetKeyDown(KeyCode.Return)))
+		if  (Input.GetKeyDown(KeyCode.Return))
 		{
 
 			if (MinIndex == 0)
@@ -70,35 +70,19 @@ public class MenuButtonController : MonoBehaviour {
 			}
 
 
-			if (MinIndex == 2)
+			if (MinIndex == 1)
 			{
-				SceneManager.LoadScene(2);
-			}
-
-			if (MinIndex == 4)
-			{
-				Application.Quit();
+				SceneManager.LoadScene(1);
 			}
 
 			if (MinIndex == 3)
 			{
-				Menu.SetActive(false);
-				Controler.SetActive(true);
+				Application.Quit();
+			}
+
 				
-			}
-
-
-			else if (index == 1)
-			{
-				SceneManager.LoadScene("anotherscene");
-			}
 		}
 
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-
-			Controler.SetActive(false);
-			Menu.SetActive(true);
-		}
+		
 	}
 }
